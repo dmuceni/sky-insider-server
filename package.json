@@ -1,6 +1,7 @@
 {
   "name": "sky-insider-server",
   "version": "1.0.0",
+  "description": "API che fa scraping di Sky TG24 e Sky Sport e pubblica un feed JSON aggiornato ogni 15 minuti.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -8,7 +9,11 @@
   "dependencies": {
     "axios": "^1.7.4",
     "cheerio": "^1.0.0-rc.12",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
 
